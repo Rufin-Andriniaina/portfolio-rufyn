@@ -54,10 +54,10 @@ const Hero = () => {
             ))}
           </span>
 
-          <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider xl:py-4 py-2 text-center overflow-hidden">
+          <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider px-2 md:px-0 xl:py-4 py-2 text-center overflow-hidden">
             I'm
             <span
-              className={`inline-block xl:w-[400px] md:w-60 w-40 lg:ml-6 ml-2 font-extrabold transform origin-left transition-transform duration-300 ease-out ${
+              className={`inline-block xl:w-100 md:w-60 w-40 lg:ml-6 ml-2 font-extrabold transform origin-left transition-transform duration-300 ease-out ${
                 isRotating ? "hidden md:rotate-100" : "rotate-0"
               }`}
             >
@@ -68,7 +68,7 @@ const Hero = () => {
         </h1>
 
         <button
-          className="xl:w-[400px] md:w-[280px] w-[250px] xl:text-2xl md:text-xl text-base md:py-1 py-0 md:px-4 px-2 rounded-r-4xl dark:bg-gray-200 bg-gray-900 dark:text-gray-900 text-white  flex justify-between items-center md:mx-0 mx-auto tracking-widest md:mr-auto transition-colors duration-500"
+          className="xl:w-100 md:w-70 w-62.5 xl:text-2xl md:text-xl text-base md:py-1 py-0 md:px-4 px-2 rounded-r-4xl dark:bg-gray-200 bg-gray-900 dark:text-gray-900 text-white  flex justify-between items-center md:mx-0 mx-auto tracking-widest md:mr-auto transition-colors duration-500"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setRoadImageOpacity(0.8)}
           onMouseLeave={() => setRoadImageOpacity(0.5)}
@@ -79,7 +79,7 @@ const Hero = () => {
           ></i>
         </button>
 
-        <div className="flex mr-auto md:gap-12 gap-2 absolute md:relative top-20 md:top-auto left-4 md:left-auto flex-col md:flex-row gap-y-3 md:gap-y-0 ">
+        <div className="flex mr-auto md:gap-12 gap-2 absolute md:relative top-36 md:top-auto left-4  md:left-auto flex-col md:flex-row gap-y-5 md:gap-y-0 ">
           {socialIcons.map((social, index) => (
             <a
               className={`${social.icon} text-red-500 dark:text-yellow-500 hover:text-gray-900 dark:hover:text-white xl:text-3xl text-2xl transition-colors duration-500 `}
